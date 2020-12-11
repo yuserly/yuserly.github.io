@@ -24,28 +24,38 @@
     
         </a>
 
+        <a class="navbar-brand" href="#" style="position: absolute; right: 0;"> 
+          <img src="https://www.rohi.cl/wp-content/uploads/2019/12/cropped-logo-rohi-187x56.png" width=" 140" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+  
+      </a>
+
+      </nav>
+
+      <nav class="navbar navbar-expand-lg barra">
+
+      
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="login.html"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="visordocumentos.html"> <i class="fas fa-file-alt"></i> Ver mis documentos </a>
-            </li>
-            
-          </ul>
+          
 
           <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#"> <i class="far fa-user-circle"></i> Nombre </a>
+
+            <li class="nav-item active mr-2">
+              <a class="nav-link icon"  href="login.html"> <i class="fas fa-home icon"></i> Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.html">Cerrar Sesión <i class="fas fa-sign-out-alt"></i> </a>
+            <li class="nav-item mr-2">
+              <a class="nav-link icon" href="visordocumentos.html"> <i class="fas fa-file-alt icon"></i> Ver mis documentos </a>
+            </li>
+            
+            <li class="nav-item mr-2">
+              <a class="nav-link icon" href="#"> <i class="far fa-user-circle icon"></i> Nombre </a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link icon" href="login.html">Cerrar Sesión <i class="fas fa-sign-out-alt icon"></i> </a>
               </li>
           </ul>
         </div>
@@ -54,7 +64,7 @@
 
       <!-- carousel  -->
 
-      <div class="container-fluid mt-4 mb-4" >
+      <div class="container mt-4 mb-4" >
           <div class="row">
 
             <div class="col-12 mt-3" style="border-bottom: 1px #e4e3e3 solid;">
@@ -155,7 +165,7 @@
                 <div class="col-12 col-sm-8 mt-4 d-flex justify-content-center">
                   <div class="col-6 col-sm-4">
 
-                    <button class="btn btn-block mr-4 " style="background-color: #3847d0;color:#FFF">Buscar</button>
+                    <button class="btn btn-block mr-4 " style="background-color: #26488F;color:#FFF">Buscar</button>
 
                   </div>
                   <div class="col-6 col-sm-4">
@@ -174,7 +184,7 @@
 
                 <table class="table table-striped nowrap table-responsive" width="100%">
                     <thead class="thead-inverse">
-                        <tr>
+                        <tr >
                             <th>Orden Trabajo</th>
                             <th>Empresa</th>
                             <th>Fecha Ingreso</th>
@@ -190,8 +200,8 @@
                             
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="text-center">
+                            <tr data-toggle="collapse" data-target="#accordion">
                                 
                                 <td>1010026650</td>
                                 <td>ELECMETAL</td>
@@ -204,6 +214,7 @@
                                 <td>NI</td>
                                 <td>Evaluacíon</td>
                                 <td><button class="btn btn-acciones" data-toggle="modal" data-target="#modalproceso"><i class="far fa-eye"></i></button></td>
+
                             </tr>
                             <tr>
                                 
@@ -322,7 +333,7 @@
 
 
     <div class="modal fade" id="modalproceso" tabindex="-1" aria-labelledby="modalprocesoLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -337,7 +348,7 @@
                  <div class="card-body">
                    <div class="barrasuperior">
                      <div class="icono_activo">
-                      <i class="far fa-file ml-2" ></i>
+                      <i class="far fa-file-alt ml-2"></i>
                      </div>
                        <div class="separador"></div>
                     <div class="icono_activo">
@@ -353,7 +364,7 @@
                       </div>
                      <div class="separador"></div>
                       <div class="icono">
-                        <i class="far fa-file ml-1" ></i>
+                        <i class="far fa-file-alt ml-1"></i>
                       </div>
                    </div>
                    <div class="barracentral">
@@ -383,6 +394,48 @@
                    
                 </div>
                </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+
+                  <table class="table table-striped nowrap table-responsive" width="100%">
+                    <thead class="thead-inverse">
+                        <tr >
+                            <th>Fecha Evaluación</th>
+                            <th>Fecha Reparación</th>
+                            <th>Fecha Liberación</th>
+                            <th>Transporte</th>
+                            <th>Patente</th>
+                            <th>Evaluación</th>
+                            <th>Reparación</th>
+                            <th>Calificación</th>
+                            <th>Certificación</th>
+                            <th>Liberación</th>
+                            <th>Guía Transporte</th>
+                            
+                        </tr>
+                        </thead>
+
+
+                        <tbody class="text-center">
+                          <tr>
+                            <td>11-11-2020</td>
+                            <td>Sin Información</td>
+                            <td>Sin Información</td>
+                            <td>Sin Información</td>
+                            <td>Sin Información</td>
+                            <td><i class="fas fa-check-circle text-success" style="font-size: 30px;"></i></td>
+                            <td><i class="fas fa-cloud-upload-alt text-info" style="font-size: 30px;"></i></td>
+                            <td><i class="fas fa-cloud-upload-alt text-info" style="font-size: 30px;"></i></td>
+                            <td><i class="fas fa-cloud-upload-alt text-info" style="font-size: 30px;"></i></td>
+                            <td><i class="fas fa-cloud-upload-alt text-info" style="font-size: 30px;"></i></td>
+                            <td><i class="fas fa-cloud-upload-alt text-info" style="font-size: 30px;"></i></td>
+                          </tr>
+                        </tbody>
+                  </table>
+
                 </div>
               </div>
               
